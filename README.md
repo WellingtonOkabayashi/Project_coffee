@@ -7,4 +7,4 @@ Segue abaixo o link do projeto :
 
 https://wellingtonokabayashi.github.io/Project_coffee/
 
-<img width="500" alt="Captura de Tela 2022-03-10 às 23 34 25" src="https://user-images.githubusercontent.com/100711519/157684724-a48db040-adab-43a8-b852-f1c9b3f5cdc6.png">
+<img width="500" alt="Captura de Tela 2022-03-10 às 23 41 52" src="https://user-images.githubusercontent.com/100711519/157685378-41f3026b-3b28-4a0f-b163-3eae3b3e7d84.png">
