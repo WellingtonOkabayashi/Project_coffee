@@ -266,7 +266,7 @@ header {
     top: 750px;
     left: 100px;
     border-radius: 50%;
-    filter: blur(300px);
+    filter: blur(200px);
   }
   .navigation ul li a:hover::before {
     display: none;
