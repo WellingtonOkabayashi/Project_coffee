@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --backgrond: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+  --bg-efect: #996dff;
+}
+body {
+  width: 100%;
+  max-height: 824px;
+  font-family: 'Manrope', sans-serif;
+  background: rgb(3, 3, 3);
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+}
+.background-effect {
+  margin: 0 auto;
+  z-index: -1;
+}
+.background-effect::before {
+  content: '';
+  position: absolute;
+  top: -65px;
+  right: -75px;
+  width: 321px;
+  height: 321px;
+  background-color: var(--bg-efect);
+  border-radius: 50%;
+  filter: blur(300px);
+  z-index: -1;
+}
+.background-effect::after {
+  content: '';
+  width: 321px;
+  height: 321px;
+  position: absolute;
+  left: -75px;
+  top: 520px;
+  background-color: var(--bg-efect);
+  border-radius: 50%;
+  filter: blur(300px);
+  z-index: -1;
+}
+.navigation {
+  box-sizing: border-box;
+  width: 1000px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  margin-top: 65px;
+  z-index: 0;
+}
+.navigation ul {
+  display: flex;
+
+  margin-left: 180px;
+}
+.navigation ul li {
+  list-style: none;
+}
+.navigation ul li a {
+  position: relative;
+  text-decoration: none;
+  margin-left: 1.8rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.navigation ul li a:hover {
+  color: var(--bg-efect);
+}
+.navigation ul li a::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--bg-efect);
+  position: absolute;
+  bottom: -5px;
+  transition: all 0.4s ease;
+}
+
+.navigation ul li a:hover::before {
+  width: 100%;
+}
+#desk-btn {
+  width: 172px;
+  height: 37px;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--bg-efect);
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bolder;
+  margin: 0;
+  margin-left: auto;
+}
+#desk-btn:hover {
+  background: #8257e5;
+  color: #000;
+}
+.contents h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  color: var(--text-color);
+  margin-top: 40px;
+  cursor: pointer;
+}
+.contents h2 {
+  margin: 10px;
+  font-size: 80px;
+  font-weight: bolder;
+
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+.contents {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+
+  text-align: center;
+}
+.contents img {
+  position: relative;
+  bottom: -5px;
+}
+.log {
+  background: url(../assets/logo\ mobile.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.text p {
+  color: var(--text-color);
+  display: none;
+}
+.menu {
+  display: none;
+}
+.mobile-btn {
+  display: none;
+}
+.mobile-effect {
+  display: none;
+}
+@media (max-width: 1024px) {
+  body {
+    max-height: 738px;
+  }
+  .navigation {
+    display: block;
+    width: 100%;
+  }
+  .navigation ul {
+    display: none;
+  }
+  .navigation img {
+    display: none;
+  }
+  .log {
+    display: block;
+    position: absolute;
+    top: 37px;
+    margin-left: 26px;
+    height: 40px;
+  }
+  button {
+    display: none;
+  }
+  .mobile-btn span {
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-bottom: 3px;
+  }
+  .mobile-btn {
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 88px;
+    width: 172px;
+    height: 37px;
+    color: var(--text-color);
+    border: 2px solid var(--bg-efect);
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bolder;
+  }
+  .mobile-btn:hover {
+    background: var(--bg-efect);
+    color: #000;
+  }
+
+  .text p {
+    width: 373px;
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 88.5px;
+  }
+
+  .contents h1 {
+    font-size: 50px;
+    margin-top: 98px;
+  }
+  .contents h2 {
+    font-size: 50px;
+  }
+
+  .contents img {
+    width: 400px;
+    position: relative;
+    bottom: -20px;
+  }
+
+  .menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../assets/Menu\ Hambúrguer.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 25px;
+    top: 49px;
+    cursor: pointer;
+  }
+
+  .divider {
+    width: 98%;
+    height: 1px;
+    background-color: var(--border);
+    position: relative;
+    top: 25.72px;
+    margin: 0 auto;
+  }
+  .background-effect::before,
+  .background-effect::after {
+    display: none;
+  }
+  .efect {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: #996dff;
+    position: absolute;
+    top: 750px;
+    left: 100px;
+    border-radius: 50%;
+    filter: blur(120px);
+  }
+  .navigation ul li a:hover::before {
+    display: none;
+  }
+  .navigation.active {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #000;
+    top: -65px;
+    z-index: 99;
+    padding-top: 65px;
+    overflow-y: hidden;
+  }
+  .navigation.active .divider {
+    display: none;
+  }
+  .navigation.active .menu {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+  }
+  .navigation.active .menu {
+    background: url(../assets/Close.svg);
+  }
+  .navigation.active ul {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+
+    margin-top: 25px;
+  }
+  .navigation.active ul li {
+    border-top: 1px solid rgba(184, 183, 183, 0.3);
+  }
+  .navigation.active ul li:last-child {
+    border-bottom: 1px solid rgba(184, 183, 183, 0.3);
+  }
+  .navigation.active ul li a {
+    line-height: 45px;
+    color: #a8a8b3;
+    font-size: 18px;
+  }
+  .navigation.active ul li a:hover {
+    color: #fff;
+    font-weight: bold;
+  }
+  .navigation.active ul li a:hover::after {
+    content: '';
+    width: 3px;
+    height: 0%;
+    display: block;
+    background: var(--bg-efect);
+    position: absolute;
+    top: -11px;
+    left: -28px;
+    transition: 0.9s;
+  }
+  .navigation.active ul li a:hover::after {
+    height: 190%;
+    align-content: center;
+  }
+}
