@@ -279,7 +279,7 @@ header {
     top: -65px;
     z-index: 99;
     padding-top: 65px;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   .navigation.active .divider {
     display: none;
