@@ -293,7 +293,7 @@ header {
     border-top-right-radius: 150px;
     filter: blur(60px);
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.5;
   }
 
   .navigation ul li a:hover::before {
